@@ -169,14 +169,14 @@ Project Link: [https://github.com/ejasso112/react-expense-tracker](https://githu
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [contributors-shield]: https://img.shields.io/github/contributors/ejasso112/repo.svg?style=for-the-badge
-[contributors-url]: https://github.com/ejasso112/repo/graphs/contributors
+[contributors-url]: https://github.com/ejasso112/react-expense-tracker/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/ejasso112/repo.svg?style=for-the-badge
-[forks-url]: https://github.com/ejasso112/repo/network/members
+[forks-url]: https://github.com/ejasso112/react-expense-tracker/network/members
 [stars-shield]: https://img.shields.io/github/stars/ejasso112/repo.svg?style=for-the-badge
-[stars-url]: https://github.com/ejasso112/repo/stargazers
+[stars-url]: https://github.com/ejasso112/react-expense-tracker/stargazers
 [issues-shield]: https://img.shields.io/github/issues/ejasso112/repo.svg?style=for-the-badge
-[issues-url]: https://github.com/ejasso112/repo/issues
+[issues-url]: https://github.com/ejasso112/react-expense-tracker/issues
 [license-shield]: https://img.shields.io/github/license/ejasso112/repo.svg?style=for-the-badge
-[license-url]: https://github.com/ejasso112/repo/blob/master/LICENSE.txt
+[license-url]: https://github.com/ejasso112/react-expense-tracker/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/ejasso112
