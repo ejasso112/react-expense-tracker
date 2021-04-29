@@ -1,5 +1,7 @@
+import React from 'react'
 import Expenses from './components/Expenses/Expenses'
 import NewExpense from './components/NewExpense/NewExpense'
+
 function App() {
   const expenses = [
     {
@@ -28,9 +30,13 @@ function App() {
     },
   ]
 
+  const addExpenseHnadler = (expense) => {
+    console.log(expense)
+  }
+
   return (
     <div>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHnadler} />
       <Expenses expenses={expenses} />
     </div>
   )
