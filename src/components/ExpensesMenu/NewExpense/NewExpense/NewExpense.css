@@ -1,0 +1,47 @@
+.newExpense__button {
+  padding: 0.75em 2.5em;
+  border: none;
+  border-radius: 0.25em;
+  font: inherit;
+  font-weight: 700;
+  font-size: 1.0625rem;
+  letter-spacing: 0.075rem;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+
+.newExpense__break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.newExpense__button--hidden {
+  transition: none;
+  visibility: hidden;
+}
+
+.newExpense__button--primary {
+  color: var(--color-text-100);
+  background-color: var(--color-accent-tertiary);
+}
+
+.newExpense__button--secondary {
+  color: var(--color-text-100);
+  background-color: var(--color-accent-secondary);
+}
+
+.newExpense__button--primary:hover,
+.newExpense__button--primary:active {
+  color: var(--color-text-100);
+  background-color: var(--color-accent-tertiary);
+  box-shadow: 0 0.25em 0px var(--color-accent-tertiary-dark);
+  transform: translateY(-0.25em);
+}
+
+.newExpense__button--secondary:hover,
+.newExpense__button--secondary:active {
+  color: var(--color-text-100);
+  background-color: var(--color-accent-secondary);
+  box-shadow: 0 0.25em 0px var(--color-accent-secondary-dark);
+  transform: translateY(-0.25em);
+}

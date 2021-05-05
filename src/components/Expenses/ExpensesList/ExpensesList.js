@@ -6,7 +6,7 @@ import './ExpensesList.css'
 const ExpensesList = (props) => {
   const expenses = props.expenses
 
-  const expensesMap = expenses.map((expense) => <ExpenseItem key={expense.id} title={expense.title} amount={expense.amount} date={expense.date} />)
+  const expensesMap = expenses.map((expense) => <ExpenseItem key={expense.id} title={expense.title} category={expense.category} amount={expense.amount} tax={expense.tax} date={expense.date} />)
 
   if (expenses.length === 0) {
     return <h2 className='expenses-list__fallback'>No expenses found</h2>

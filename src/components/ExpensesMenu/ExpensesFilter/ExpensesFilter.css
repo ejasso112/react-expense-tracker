@@ -1,0 +1,21 @@
+.expensesFilter {
+  color: var(--color-text-1000);
+}
+
+.expensesFilter__label {
+  color: var(--color-text-1000);
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.expensesFilter select {
+  padding: 0.25em 0.75em 0.25em 0.25em;
+  border: none;
+  color: var(--color-accent-secondary);
+  font: inherit;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+}

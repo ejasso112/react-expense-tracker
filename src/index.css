@@ -1,15 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+  --color-background: #e1e1e1;
+  --color-foreground: #ffffff;
+  --color-accent: #5bae47;
+  --color-accent-secondary: #15a6d5;
+  --color-accent-secondary-dark: #1188ae;
+  --color-accent-tertiary: #fd9824;
+  --color-accent-tertiary-dark: #b15f02;
+  --color-shadow: #b1b1b1;
+
+  --color-text-1200: #0b0b0b;
+  --color-text-1100: #202020;
+  --color-text-1000: #353535;
+  --color-text-900: #4a4a4a;
+  --color-text-800: #606060;
+  --color-text-700: #757575;
+  --color-text-600: #8a8a8a;
+  --color-text-500: #9f9f9f;
+  --color-text-400: #b5b5b5;
+  --color-text-300: #cacaca;
+  --color-text-200: #dfdfdf;
+  --color-text-100: #f4f4f4;
+}
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Dosis', sans-serif;
 }
 
 body {
   margin: 0;
-  background-color: #3f3f3f;
+  background-color: var(--color-background);
 }
 
+.container {
+  max-width: 1200px;
+  padding: 2em;
+  margin: 0 auto;
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 80%;
+  }
+}

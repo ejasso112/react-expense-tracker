@@ -4,11 +4,16 @@ import './ExpenseForm.css'
 
 const ExpenseForm = (props) => {
   const [enteredTitle, setEnteredTitle] = useState('')
+  const [enteredCategory, setEnteredCategory] = useState('')
   const [enteredAmount, setEnteredAmount] = useState('')
   const [enteredDate, setEnteredDate] = useState('')
 
   const titleChangeHandler = (event) => {
     setEnteredTitle(event.target.value)
+  }
+
+  const categoryChangeHandler = (event) => {
+    setEnteredCategory(event.target.value)
   }
 
   const amountChangeHandler = (event) => {
@@ -24,36 +29,41 @@ const ExpenseForm = (props) => {
 
     props.onSaveExpenseData({
       title: enteredTitle,
+      category: enteredCategory,
       amount: +enteredAmount,
       date: new Date(enteredDate),
     })
 
     setEnteredTitle('')
+    setEnteredCategory('')
     setEnteredAmount('')
     setEnteredDate('')
   }
 
   return (
-    <form onSubmit={submitHandler}>
+    <form className='newExpense__form' onSubmit={submitHandler}>
       <div className='new-expense__controls'>
         <div className='new-expense__control'>
-          <label>Title</label>
-          <input type='text' onChange={titleChangeHandler} value={enteredTitle} />
+          <label>DATE:</label>
+          <input className='newExpense__input' type='date' min='2019-01-01' max='2022-12-31' onChange={dateChangeHandler} value={enteredDate} />
         </div>
         <div className='new-expense__control'>
-          <label>Amount</label>
-          <input type='number' min='0.01' step='0.01' onChange={amountChangeHandler} value={enteredAmount} />
+          <label>TITLE:</label>
+          <input className='newExpense__input' type='text' onChange={titleChangeHandler} value={enteredTitle} />
         </div>
         <div className='new-expense__control'>
-          <label>Date</label>
-          <input type='date' min='2019-01-01' max='2022-12-31' onChange={dateChangeHandler} value={enteredDate} />
+          <label>AMOUNT:</label>
+          <input className='newExpense__input' type='number' min='0.01' step='0.01' onChange={amountChangeHandler} value={enteredAmount} />
+        </div>
+        <div className='new-expense__control'>
+          <label>CATEGORY:</label>
+          <input className='newExpense__input' type='text' onChange={categoryChangeHandler} value={enteredCategory} />
         </div>
       </div>
       <div className='new-expense__actions'>
-        <button type='button' onClick={props.onCancelClick}>
-          Cancel
+        <button className='newExpense__button newExpense__button--secondary' type='submit'>
+          Add Expense
         </button>
-        <button type='submit'>Add Expense</button>
       </div>
     </form>
   )
